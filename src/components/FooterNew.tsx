@@ -50,17 +50,17 @@ export default function FooterNew() {
               transition={{ duration: 0.8 }}
             >
               <h3 className="text-6xl md:text-7xl font-black mb-8 leading-tight">
-                Let's Create
+                Let&apos;s Create
                 <br />
                 <span className="text-gradient">Something Great</span>
               </h3>
               
               <motion.a
-                href="mailto:hello@example.com"
+                href="mailto:kemalyavaass@gmail.com"
                 className="text-3xl text-gray-400 hover:text-white transition-colors inline-block group relative"
                 whileHover={{ x: 10 }}
               >
-                hello@example.com
+                kemalyavaass@gmail.com
                 <motion.div
                   className="absolute bottom-0 left-0 h-px bg-white"
                   initial={{ width: 0 }}
