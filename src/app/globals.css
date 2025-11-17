@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased overflow-x-hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent;
+    background-size: 200% auto;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.3),
+                 0 0 80px rgba(255, 255, 255, 0.1);
+  }
+
+  .mesh-gradient {
+    background: 
+      radial-gradient(at 40% 20%, rgba(255, 255, 255, 0.03) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, rgba(255, 255, 255, 0.05) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, rgba(255, 255, 255, 0.03) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, rgba(255, 255, 255, 0.05) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(255, 255, 255, 0.03) 0px, transparent 50%),
+      radial-gradient(at 80% 100%, rgba(255, 255, 255, 0.05) 0px, transparent 50%);
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
